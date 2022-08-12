@@ -48,22 +48,3 @@ def select(original_table_schema, column_names):
     result_table_schema.rows = [[row[idx] for idx in header_idxs] for row in original_table_schema.rows]
 
     return result_table_schema
-
-
-# 1
-# result = left_outer_join(sender_table, 'senders.email_domain', setup_table, 'setups.設定ドメイン')
-# result = select(result, ['setups.domain_id', 'setups.企業名', 'setups.設定ドメイン', 'senders.is_valid'])
-# result = left_outer_join(candidate_table, 'candidates.domain_name', result, 'setups.企業名')
-# # 2
-# result = left_outer_join(sender_table, 'senders.email_domain', candidate_table, 'candidates.email_domain')
-#
-# for row in result:
-#     print(','.join([str(c) if c else '' for c in row]))
-
-# pprint()
-
-# pprint(result)
-# print('--------------')
-# pprint(candidate_table)
-# print('--------------')
-
