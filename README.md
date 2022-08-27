@@ -24,3 +24,9 @@ result = joins.select(l_addresses, ['addresses.*', 'postals.State'])
 c = result.to_csv()
 print(c)
 ```
+
+## Ref
+
+ここで説明しています
+
+- https://zenn.dev/harukaeru/articles/207812eb1fc7ef
